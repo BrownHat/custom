@@ -35,6 +35,10 @@
             }
           }
         };
+        
+        bot.loadChat();
+
+        
         bot.commands.baconCommand = {
           command: 'fb',  // The command to be called. With the standard command literal this would be: !bacon
           rank: 'user', // Minimum user permission to use the command
@@ -46,6 +50,9 @@
             }
           }
         };
+        
+        bot.loadChat();
+        
         bot.commands.baconCommand = {
           command: 'discord',  // The command to be called. With the standard command literal this would be: !bacon
           rank: 'user', // Minimum user permission to use the command
