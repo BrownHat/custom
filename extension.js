@@ -32,7 +32,28 @@
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
               API.sendChat("Website http://moesocial.com");
+            }
+          }
+        };
+        bot.commands.baconCommand = {
+          command: 'fb',  // The command to be called. With the standard command literal this would be: !bacon
+          rank: 'user', // Minimum user permission to use the command
+          type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+          functionality: function (chat, cmd) {
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
               API.sendchat("Facebook http://fb.com/MoeSocial");
+            }
+          }
+        };
+        bot.commands.baconCommand = {
+          command: 'discord',  // The command to be called. With the standard command literal this would be: !bacon
+          rank: 'user', // Minimum user permission to use the command
+          type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+          functionality: function (chat, cmd) {
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("https://discordapp.com/channels/217282275350544384/217282275350544384");
             }
           }
         };
@@ -50,7 +71,7 @@
       chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
-      startupCap: 1, // 1-200
+      startupCap: 2, // 1-200
       startupVolume: 0, // 1-100
       startupEmoji: false, // true or false
       autowoot: true,
@@ -69,11 +90,11 @@
       maximumCycletime: 10,
       voteSkip: false,
       voteSkipLimit: 10,
-      historySkip: false,
+      historySkip: true,
       timeGuard: true,
       maximumSongLength: 10,
       autodisable: true,
-      commandCooldown: 0,
+      commandCooldown: 1,
       usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
