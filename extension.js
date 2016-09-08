@@ -31,7 +31,7 @@
           functionality: function (chat, cmd) {
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me http://moesocial.com");
+              API.sendChat("http://moesocial.com");
             }
           }
         };
@@ -43,7 +43,7 @@
           functionality: function (chat, cmd) {
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me http://fb.com/MoeSocial");
+              API.sendChat("http://fb.com/MoeSocial");
             }
           }
         };
@@ -113,7 +113,7 @@
       intervalMessages: [],
       messageInterval: 5,
       songstats: true,
-      commandLiteral: "/",
+      commandLiteral: "!",
       blacklists: {
         NSFW: "https://rawgit.com/BrownHat/custom/master/blacklists/NSFWlist.json",
         OP: "https://rawgit.com/BrownHat/custom/master/blacklists/OPlist.json",
