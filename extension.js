@@ -37,6 +37,19 @@
             }
           }
         };
+        
+        bot.commands.baconCommand = {
+            command: '!moe-social',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("http://moesocial.com");
+            }
+          }
+        }
 
         // Load the chat package again to account for any changes
         bot.loadChat();
@@ -46,13 +59,13 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "Moe_plug",
       language: "english",
       chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
-      startupVolume: 0, // 0-100
+      startupVolume: 50, // 1-100
       startupEmoji: false, // true or false
       autowoot: true,
       autoskip: false,
@@ -105,9 +118,9 @@
       songstats: true,
       commandLiteral: "!",
       blacklists: {
-        NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
-        OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
-        BANNED: "https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json"
+        NSFW: "https://rawgit.com/BrownHat/custom/master/blacklists/NSFWlist.json",
+        OP: "https://rawgit.com/BrownHat/custom/master/blacklists/OPlist.json",
+        BANNED: "https://rawgit.com/BrownHat/custom/master/blacklists/BANNEDlist.json"
       }
     }));
 
