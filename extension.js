@@ -49,7 +49,7 @@
               API.sendChat("http://moesocial.com");
             }
           }
-        }
+        };
 
         // Load the chat package again to account for any changes
         bot.loadChat();
