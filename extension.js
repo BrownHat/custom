@@ -33,7 +33,7 @@
             //if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("Discord room: http://discordapp.com/channels/217282275350544384/217282275350544384");
+              API.sendChat("Discord room:");
             }
           }
         };
@@ -57,7 +57,7 @@
           functionality: function (chat, cmd) {
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me http://fb.com");
+              API.sendChat("/me http://fb.com/MoeSocial");
             }
           }
         };
