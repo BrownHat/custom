@@ -123,7 +123,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("yui nii-sama!!!");
+              API.sendChat("yui nii-sama là chủ nhân của tôi!!!!!");
             }
           }
         };
@@ -136,7 +136,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("Mao lõm - sama!!!");
+              API.sendChat("Mao-chan xinh gái , là bé gái 10 tuổi có nhu cầu tuyển onii-chan, tuy nhiên lại bị @LÕM :p");
             }
           }
         };
