@@ -29,6 +29,7 @@
           rank: 'user', 
           type: 'exact', 
           functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
               API.sendChat("Website http://moesocial.com");
@@ -36,11 +37,12 @@
           }
         };
         
-        bot.commands.facebookCommand = {
-          command: 'facebook',  
+        bot.commands.fbCommand = {
+          command: 'moefb',  
           rank: 'user',
           type: 'exact',
           functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
               API.sendchat("Facebook http://fb.com/MoeSocial");
@@ -49,10 +51,11 @@
         };
         
         bot.commands.discordCommand = {
-          command: 'discord',  // The command to be called. With the standard command literal this would be: !bacon
-          rank: 'user', // Minimum user permission to use the command
-          type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+          command: 'discord', 
+          rank: 'user', 
+          type: 'exact',
           functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
               API.sendChat("https://discordapp.com/channels/217282275350544384/217282275350544384");
