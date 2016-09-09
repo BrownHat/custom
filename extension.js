@@ -35,7 +35,7 @@
               API.sendChat("Website http://moesocial.com");
             }
           }
-        };
+        }
         
         bot.commands.moefbCommand = {
           command: 'moefb',  
@@ -48,7 +48,7 @@
               API.sendchat("Facebook http://fb.com/MoeSocial");
             }
           }
-        };
+        }
         
         bot.commands.discordCommand = {
           command: 'discord', 
@@ -61,7 +61,7 @@
               API.sendChat("https://discordapp.com/channels/217282275350544384/217282275350544384");
             }
           }
-        };
+        }
         
         bot.commands.vklCommand = {
           command: 'vkl', 
@@ -74,12 +74,12 @@
               API.sendChat("địt con mẹ, vãi cả lồn!");
             }
           }
-        };
+        }
 
         // Load the chat package again to account for any changes
         bot.loadChat();
 
-      }
+    }
 
     //Change the bots default settings and make sure they are loaded on launch
 
