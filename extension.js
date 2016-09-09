@@ -37,15 +37,15 @@
           }
         }
         
-        bot.commands.moefbCommand = {
-          command: 'moefb',  
+        bot.commands.yuiCommand = {
+          command: 'yui',  
           rank: 'user',
           type: 'exact',
           functionality: function (chat, cmd) {
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendchat("Facebook http://fb.com/MoeSocial");
+              API.sendchat("yui nii-sama!!!");
             }
           }
         }
@@ -63,15 +63,15 @@
           }
         }
         
-        bot.commands.vklCommand = {
-          command: 'vkl', 
+        bot.commands.fbCommand = {
+          command: 'fb', 
           rank: 'user', 
           type: 'exact',
           functionality: function (chat, cmd) {
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("địt con mẹ, vãi cả lồn!");
+              API.sendChat("Fanpage http://facebook.com/MoeSocial");
             }
           }
         }
