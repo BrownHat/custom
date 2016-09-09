@@ -141,12 +141,6 @@
           }
         };
         
-        bot.room.eventUserJoin = {
-            API.sendChat("Xin chào con khốn!");
-        };
-
-
-        
         // Load the chat package again to account for any changes
         bot.loadChat();
 
@@ -202,7 +196,7 @@
       motd: "Temporary Message of the Day",
       filterChat: true,
       etaRestriction: false,
-      welcome: true,
+      welcome: false,
       opLink: null,
       rulesLink: null,
       themeLink: null,
