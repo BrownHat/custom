@@ -97,7 +97,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("Mao lõm");
+              API.sendChat("Have a pussy Italy!");
             }
           }
         };
@@ -110,7 +110,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("Mao là ai?");
+              API.sendChat("Mọi người thường gọi Rei là con Rei");
             }
           }
         };
@@ -136,7 +136,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("Mao-chan xinh gái , là bé gái 10 tuổi có nhu cầu tuyển onii-chan, tuy nhiên lại bị @LÕM :p");
+              API.sendChat("Mao-chan xinh gái , là bé gái 10 tuổi có nhu cầu tuyển onii-chan, tuy nhiên lại bị LÕM :p");
             }
           }
         };
@@ -203,7 +203,7 @@
       fbLink: null,
       youtubeLink: null,
       website: null,
-      intervalMessages: [],
+      intervalMessages: ["Tham gia mạng xa hội Moe Social: http://moesoical.com","Nhớ play những video hợp lệ!!!",""],
       messageInterval: 5,
       songstats: true,
       commandLiteral: "!",
