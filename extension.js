@@ -24,7 +24,7 @@
           window.bot.chatUtilities.spam.push(spamWords[i]);
         }
         
-        bot.commands.moeCommand = {
+        bot.commands.1Command = {
           command: 'moe', 
           rank: 'user', 
           type: 'exact', 
@@ -37,7 +37,7 @@
           }
         };
         
-        bot.commands.fbCommand = {
+        bot.commands.2Command = {
           command: 'moefb',  
           rank: 'user',
           type: 'exact',
@@ -50,7 +50,7 @@
           }
         };
         
-        bot.commands.discordCommand = {
+        bot.commands.3Command = {
           command: 'discord', 
           rank: 'user', 
           type: 'exact',
@@ -63,7 +63,7 @@
           }
         };
         
-        bot.commands.discordCommand = {
+        bot.commands.4Command = {
           command: 'vkl', 
           rank: 'user', 
           type: 'exact',
