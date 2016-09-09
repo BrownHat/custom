@@ -35,7 +35,7 @@
               API.sendChat("Website http://moesocial.com");
             }
           }
-        }
+        };
         
         bot.commands.yuiCommand = {
           command: 'yui',  
@@ -48,7 +48,7 @@
               API.sendchat("yui nii-sama!!!");
             }
           }
-        }
+        };
         
         bot.commands.discordCommand = {
           command: 'discord', 
@@ -61,7 +61,7 @@
               API.sendChat("https://discordapp.com/channels/217282275350544384/217282275350544384");
             }
           }
-        }
+        };
         
         bot.commands.fbCommand = {
           command: 'fb', 
@@ -74,7 +74,7 @@
               API.sendChat("Fanpage http://facebook.com/MoeSocial");
             }
           }
-        }
+        };
 
         // Load the chat package again to account for any changes
         bot.loadChat();
