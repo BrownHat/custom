@@ -24,7 +24,7 @@
           window.bot.chatUtilities.spam.push(spamWords[i]);
         }
         
-        bot.commands.baconCommand = {
+        bot.commands.moeCommand = {
           command: 'moe',  // The command to be called. With the standard command literal this would be: !bacon
           rank: 'user', // Minimum user permission to use the command
           type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
@@ -36,10 +36,7 @@
           }
         };
         
-        bot.loadChat();
-
-        
-        bot.commands.baconCommand = {
+        bot.commands.fbCommand = {
           command: 'fb',  // The command to be called. With the standard command literal this would be: !bacon
           rank: 'user', // Minimum user permission to use the command
           type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
@@ -51,9 +48,7 @@
           }
         };
         
-        bot.loadChat();
-        
-        bot.commands.baconCommand = {
+        bot.commands.discordCommand = {
           command: 'discord',  // The command to be called. With the standard command literal this would be: !bacon
           rank: 'user', // Minimum user permission to use the command
           type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
