@@ -90,7 +90,7 @@
         };
         
         bot.commands.q1Command = {
-          command: '!q1', 
+          command: 'q1', 
           rank: 'user', 
           type: 'exact',
           functionality: function (chat, cmd) {
@@ -98,6 +98,19 @@
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
               API.sendChat("Mao lão");
+            }
+          }
+        };
+        
+        bot.commands.q2Command = {
+          command: 'q2', 
+          rank: 'user', 
+          type: 'exact',
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("Mao là ai?");
             }
           }
         };
