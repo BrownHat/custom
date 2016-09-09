@@ -37,15 +37,15 @@
           }
         };
         
-        bot.commands.yuiCommand = {
-          command: 'yui',  
+        bot.commands.maoCommand = {
+          command: 'mao',  
           rank: 'user',
           type: 'exact',
           functionality: function (chat, cmd) {
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendchat("yui nii-sama!!!");
+              API.sendchat("mao-chan!!");
             }
           }
         };
@@ -97,7 +97,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("Mao lão");
+              API.sendChat("Mao lõm");
             }
           }
         };
@@ -114,7 +114,20 @@
             }
           }
         };
-
+        
+        bot.commands.yuiCommand = {
+          command: 'yui', 
+          rank: 'user', 
+          type: 'exact',
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("yui nii-sama!!!");
+            }
+          }
+        };
+        
         // Load the chat package again to account for any changes
         bot.loadChat();
 
