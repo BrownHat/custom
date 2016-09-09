@@ -149,7 +149,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "Moe_plug",
+      botName: "Moe-chan",
       language: "english",
       chatLink: "https://raw.githubusercontent.com/BrownHat/custom/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
@@ -169,9 +169,9 @@
       lockdownEnabled: false,
       lockGuard: false,
       maximumLocktime: 10,
-      cycleGuard: true,
+      cycleGuard: false,
       maximumCycletime: 10,
-      voteSkip: false,
+      voteSkip: true,
       voteSkipLimit: 5,
       historySkip: true,
       timeGuard: true,
@@ -196,7 +196,7 @@
       motd: "Temporary Message of the Day",
       filterChat: true,
       etaRestriction: false,
-      welcome: false,
+      welcome: true,
       opLink: null,
       rulesLink: null,
       themeLink: null,
@@ -205,7 +205,7 @@
       website: null,
       intervalMessages: ["Tham gia mạng xa hội Moe Social: http://moesoical.com","Nhớ play những video hợp lệ!!!",""],
       messageInterval: 5,
-      songstats: true,
+      songstats: false,
       commandLiteral: "!",
       blacklists: {
         NSFW: "https://rawgit.com/BrownHat/custom/master/blacklists/NSFWlist.json",
