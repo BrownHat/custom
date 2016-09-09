@@ -143,7 +143,7 @@
         
         bot.room.eventUserJoin = {
             API.sendChat("Xin chào con khốn!");
-        }
+        };
 
 
         
