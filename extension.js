@@ -151,7 +151,7 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
       botName: "Moe_plug",
       language: "english",
-      chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
+      chatLink: "https://raw.githubusercontent.com/BrownHat/custom/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 2, // 1-200
