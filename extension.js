@@ -141,6 +141,12 @@
           }
         };
         
+        bot.room.eventUserJoin = {
+            API.sendChat("Xin chào con khốn!");
+        }
+
+
+        
         // Load the chat package again to account for any changes
         bot.loadChat();
 
