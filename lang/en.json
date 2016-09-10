@@ -64,7 +64,7 @@
     "datarestored": "Previously stored data successfully retrieved.",
     "greyuser": "Only bouncers and up can run a bot.",
     "bouncer": "The bot can't move people when it's run as a bouncer.",
-    "online": "\/me %%BOTNAME%% đã trở lại!",
+    "online": "\/me %%BOTNAME%% v%%VERSION%% đã trở lại!",
     "welcome": "\/me Chào mừng đã quay trở lại %%NAME%% -sama",
     "welcomeback": "\/me Okarinasimasu, %%NAME%%-sama",
     "songknown": "\/me @%%NAME%%, this song is in the DJ history.",
