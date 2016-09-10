@@ -154,15 +154,15 @@
           }
         };
         
-        bot.commands.randomquoteCommand = {
-          command: 'randomquote', 
+        bot.commands.rqCommand = {
+          command: 'rq', 
           rank: 'user', 
           type: 'exact',
           functionality: function (chat, cmd) {
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat(basicbot.chat.cookies);
+              API.sendChat("123","456","789","012");
             }
           }
         };
