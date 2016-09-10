@@ -65,7 +65,7 @@
     "greyuser": "Only bouncers and up can run a bot.",
     "bouncer": "The bot can't move people when it's run as a bouncer.",
     "online": "\/me %%BOTNAME%% v%%VERSION%% đã trở lại!",
-    "welcome": "\/me Chào mừng đã quay trở lại %%NAME%% -sama",
+    "welcome": "\/me Xin chào %%NAME%%, có vẻ như đây là lần đầu bạn tham gia, hi vọng %%NAME% có thời gian vui vẻ :D",
     "welcomeback": "\/me Okarinasimasu, %%NAME%%-sama",
     "songknown": "\/me @%%NAME%%, this song is in the DJ history.",
     "notavailable": "\/me @%%NAME%%, the song you played was not available.",
