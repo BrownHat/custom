@@ -203,7 +203,7 @@
       fbLink: null,
       youtubeLink: null,
       website: null,
-      intervalMessages: ["Tham gia mạng xa hội Moe Social: http://moesoical.com","Nhớ play những video hợp lệ!!!",""],
+      intervalMessages: ["Tham gia mạng xa hội Moe Social: http://moesoical.com","Nhớ tuân thủ đúng quy định của room",""],
       messageInterval: 5,
       songstats: false,
       commandLiteral: "!",
