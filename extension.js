@@ -58,7 +58,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("https://discordapp.com/channels/217282275350544384/217282275350544384");
+              API.sendChat("Tham gia discord: https://discordapp.com/channels/217282275350544384/217282275350544384");
             }
           }
         };
@@ -141,6 +141,19 @@
           }
         };
         
+        bot.commands.cmdlinkCommand = {
+          command: 'cmdlink', 
+          rank: 'user', 
+          type: 'exact',
+          functionality: function (chat, cmd) {
+            if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+            if (!bot.commands.executable(this.rank, chat)) return void (0);
+            else {
+              API.sendChat("Tìm command ở đây: http://bit.ly/MoePlugCommand");
+            }
+          }
+        };
+        
         // Load the chat package again to account for any changes
         bot.loadChat();
 
@@ -194,7 +207,7 @@
       afkRankCheck: "ambassador",
       motdEnabled: true,
       motdInterval: 5,
-      motd: "Temporary Message of the Day",
+      motd: "Mai là tận thế.",
       filterChat: true,
       etaRestriction: false,
       welcome: true,
